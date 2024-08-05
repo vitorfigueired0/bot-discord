@@ -3,13 +3,18 @@
   "version": "1.0.0",
   "description": "Bot básico de discord para aprendizado",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.mjs"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/vitorfigueired0/vitorbot-discord"
   },
   "author": "Vitor Figueiredo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.15.3"
+  }
 }
