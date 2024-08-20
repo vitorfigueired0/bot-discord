@@ -7,6 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node src/index.mjs",
+    "start:dev": "nodemon src/index.mjs",
     "deploy": "node src/deploy-command.js"
   },
   "repository": {
