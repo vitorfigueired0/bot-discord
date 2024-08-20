@@ -1,0 +1,3 @@
+Ver diferença entre reply e followUp
+Ver os tipos de evento
+Ver os atributos de evento
