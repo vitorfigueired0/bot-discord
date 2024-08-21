@@ -9,8 +9,14 @@ export default {
     .setDescription('Choose a movie from watch list'),
 
   async execute(interaction) {
-    const movie = this.pickMovie()
-    await interaction.reply(`The movie of the night is: ${movie}`)
+    const movie = await this.pickMovie()
+    
+    if(movie) {
+      await interaction.reply(`The movie of the night is: ${movie}`)
+      return
+    }
+
+    await interaction.reply(`The movie list is empty, please, register new values`)
   },
 
   async pickMovie() {
